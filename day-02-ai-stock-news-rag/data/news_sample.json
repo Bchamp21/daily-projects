@@ -1,0 +1,72 @@
+[
+  {
+    "id": "n1",
+    "date": "2026-10-10",
+    "ticker": "AAPL",
+    "headline": "Apple unveils new M5 MacBook lineup with on-device AI features",
+    "text": "Apple Inc. announced the M5 MacBook Pro and Air, highlighting private on-device AI for summarization and coding assistants. Analysts say the move strengthens Apple's AI story without heavy cloud spend."
+  },
+  {
+    "id": "n2",
+    "date": "2026-10-09",
+    "ticker": "AAPL",
+    "headline": "AAPL services revenue hits record as App Store and Apple TV grow",
+    "text": "Apple reported record services revenue driven by App Store subscriptions and Apple TV+. Investors view recurring services as a stabilizer for AAPL margins amid hardware cycles."
+  },
+  {
+    "id": "n3",
+    "date": "2026-10-11",
+    "ticker": "MSFT",
+    "headline": "Microsoft Azure AI capacity expands with new OpenAI partnership terms",
+    "text": "Microsoft said Azure will add more GPU regions to meet demand for Copilot and OpenAI workloads. MSFT reiterated that AI is the largest driver of Azure growth this year."
+  },
+  {
+    "id": "n4",
+    "date": "2026-10-08",
+    "ticker": "MSFT",
+    "headline": "MSFT Teams adds enterprise RAG connectors for SharePoint and OneDrive",
+    "text": "Microsoft rolled out retrieval-augmented generation connectors so Teams Copilot can cite SharePoint and OneDrive documents with permissions preserved."
+  },
+  {
+    "id": "n5",
+    "date": "2026-10-12",
+    "ticker": "NVDA",
+    "headline": "NVIDIA Blackwell GPUs see strong demand from cloud hyperscalers",
+    "text": "NVIDIA reported that Blackwell GPU shipments are booked through mid-2027 as AWS, Azure, and Google Cloud race for AI training capacity. NVDA remains the key supplier for large language model clusters."
+  },
+  {
+    "id": "n6",
+    "date": "2026-10-07",
+    "ticker": "NVDA",
+    "headline": "NVDA announces CUDA software updates for financial risk models",
+    "text": "NVIDIA released CUDA toolkit updates aimed at banks and hedge funds running Monte Carlo and market risk simulations on GPUs, expanding beyond pure AI training use cases."
+  },
+  {
+    "id": "n7",
+    "date": "2026-10-06",
+    "ticker": "AAPL",
+    "headline": "Supply chain notes: iPhone camera modules face short delay in Asia",
+    "text": "A short delay in camera module shipments may nudge some iPhone production into early November. Apple said demand remains solid and the impact on AAPL fiscal guidance is limited."
+  },
+  {
+    "id": "n8",
+    "date": "2026-10-10",
+    "ticker": "MSFT",
+    "headline": "Microsoft earns big deal for government cloud and security suites",
+    "text": "A multi-year US public-sector contract covering Microsoft 365, Defender, and Azure Government boosts MSFT's backlog in regulated workloads."
+  },
+  {
+    "id": "n9",
+    "date": "2026-10-11",
+    "ticker": "NVDA",
+    "headline": "Why is NVDA mentioned in every AI earnings call this season?",
+    "text": "Companies across software and cloud keep citing NVIDIA GPUs as a bottleneck and a growth enabler. Analysts say NVDA's visibility in earnings transcripts reflects its central role in the AI stack."
+  },
+  {
+    "id": "n10",
+    "date": "2026-10-05",
+    "ticker": "MSFT",
+    "headline": "MSFT stock dips after mixed Windows OEM commentary",
+    "text": "Microsoft shares slipped briefly after a partner hinted at softer PC OEM volumes, though Azure and AI commentary remained upbeat for MSFT long-term holders."
+  }
+]
