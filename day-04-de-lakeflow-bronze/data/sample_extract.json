@@ -1,0 +1,14 @@
+[
+  {"ticker": "AAPL", "trade_date": "2026-10-01", "open": 225.10, "high": 227.50, "low": 224.00, "close": 226.80, "volume": 48200100},
+  {"ticker": "aapl", "trade_date": "2026-10-02", "open": "226.80", "high": "228.10", "low": "225.50", "close": "227.40", "volume": "45120000"},
+  {"ticker": "MSFT", "trade_date": "2026-10-01", "open": 415.00, "high": 418.25, "low": 413.50, "close": 417.10, "volume": 22150000},
+  {"ticker": "msft", "trade_date": "2026-10-02", "open": 417.10, "high": 419.00, "low": 416.00, "close": 418.55, "volume": 19880000},
+  {"ticker": "NVDA", "trade_date": "2026-10-01", "open": 120.50, "high": 123.00, "low": 119.80, "close": 122.40, "volume": 312400000},
+  {"ticker": "NVDA", "trade_date": "2026-10-02", "open": 122.40, "high": 124.10, "low": 121.00, "close": 123.75, "volume": 289100000},
+  {"ticker": "AAPL", "trade_date": "2026-10-03", "open": 227.40, "high": 229.00, "low": 226.00, "close": 228.20, "volume": 40200000},
+  {"ticker": "MSFT", "trade_date": "2026-10-03", "open": 418.55, "high": 420.00, "low": 417.00, "close": 419.25, "volume": 17500000},
+  {"ticker": "NVDA", "trade_date": "2026-10-03", "open": 123.75, "high": 125.50, "low": 123.00, "close": 124.90, "volume": 275000000},
+  {"ticker": "AAPL", "trade_date": "2026-10-06", "open": 228.20, "high": 230.00, "low": 227.50, "close": 229.10, "volume": 39000000},
+  {"ticker": "BADX", "trade_date": "2026-10-01", "open": 100.0, "high": 101.0, "low": 105.0, "close": 100.5, "volume": 1000},
+  {"ticker": "ZZ", "trade_date": "not-a-date", "open": 10, "high": 11, "low": 9, "close": 10.5, "volume": 500}
+]
