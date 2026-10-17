@@ -10,5 +10,6 @@ Small end-to-end builds, one per day, rotating:
 | 2 | AI | [`day-02-ai-stock-news-rag`](./day-02-ai-stock-news-rag) — offline RAG over sample stock headlines |
 | 3 | Python | [`day-03-python-price-api`](./day-03-python-price-api) — FastAPI + Pydantic validation + SQLite + pytest |
 | 4 | Data Engineering | [`day-04-de-lakeflow-bronze`](./day-04-de-lakeflow-bronze) — Lakeflow/JDBC-style ingest → Bronze Delta for `market.prices` |
+| 5 | AI | [`day-05-ai-stock-agent-tools`](./day-05-ai-stock-agent-tools) — tool-calling LLM agent (offline, Groq, or Ollama) |
 
 Each day has code, tests, and a short README with a diagram.
