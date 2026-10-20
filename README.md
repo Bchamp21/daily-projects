@@ -13,5 +13,6 @@ Small end-to-end builds, one per day, rotating:
 | 5 | AI | [`day-05-ai-stock-agent-tools`](./day-05-ai-stock-agent-tools) — tool-calling LLM agent (offline, Groq, or Ollama) |
 | 6 | Python | [`day-06-python-csv-quality-cli`](./day-06-python-csv-quality-cli) — installable CLI that validates price CSVs (Pydantic, argparse, pytest) |
 | 7 | Data Engineering | [`day-07-de-silver-delta`](./day-07-de-silver-delta) — PySpark/Delta Silver: dedupe, window returns, idempotent MERGE |
+| 8 | AI | [`day-08-ai-rag-evals`](./day-08-ai-rag-evals) — RAG eval harness: hit@k, recall@k, MRR, groundedness, CI quality gate |
 
 Each day has code, tests, and a short README with a diagram.

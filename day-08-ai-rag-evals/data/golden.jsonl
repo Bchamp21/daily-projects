@@ -1,0 +1,16 @@
+{"question": "How is Apple services revenue doing?", "relevant": ["n01"]}
+{"question": "What is happening with iPhone sales in China?", "relevant": ["n02"]}
+{"question": "Which company announced a stock buyback?", "relevant": ["n03"]}
+{"question": "Is Azure cloud growth speeding up?", "relevant": ["n04"]}
+{"question": "Who raised their dividend?", "relevant": ["n06"]}
+{"question": "How much did Nvidia data center revenue grow?", "relevant": ["n07"]}
+{"question": "Which chip sales to China are at risk from export rules?", "relevant": ["n08"]}
+{"question": "Which cloud businesses are growing?", "relevant": ["n04", "n10"]}
+{"question": "Tell me about record sales", "relevant": ["n01", "n11"]}
+{"question": "Why are Tesla deliveries down?", "relevant": ["n12"]}
+{"question": "Which company's AI demand lifted revenue the most, Apple or Nvidia?", "relevant": ["n07"]}
+{"question": "Is Amazon cloud making more money?", "relevant": ["n10"]}
+{"question": "Who is returning cash to shareholders?", "relevant": ["n03", "n06"]}
+{"question": "Which carmaker is struggling?", "relevant": ["n12"]}
+{"question": "Apple record buyback news", "relevant": ["n03"]}
+{"question": "record cloud revenue for Microsoft", "relevant": ["n04"]}

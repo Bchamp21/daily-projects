@@ -1,0 +1,14 @@
+[
+  {"id": "n01", "ticker": "AAPL", "text": "Apple services revenue hits a record as App Store and iCloud subscriptions grow."},
+  {"id": "n02", "ticker": "AAPL", "text": "Apple iPhone sales slow in China while India shipments climb."},
+  {"id": "n03", "ticker": "AAPL", "text": "Apple announces a 110 billion dollar stock buyback, its largest ever."},
+  {"id": "n04", "ticker": "MSFT", "text": "Microsoft Azure cloud growth speeds up on demand for AI workloads."},
+  {"id": "n05", "ticker": "MSFT", "text": "Microsoft Copilot subscriptions lift Office commercial revenue."},
+  {"id": "n06", "ticker": "MSFT", "text": "Microsoft raises its quarterly dividend by ten percent."},
+  {"id": "n07", "ticker": "NVDA", "text": "Nvidia data center revenue triples on demand for AI GPUs."},
+  {"id": "n08", "ticker": "NVDA", "text": "Nvidia warns export rules could hurt chip sales to China."},
+  {"id": "n09", "ticker": "NVDA", "text": "Nvidia CUDA software keeps developers locked into its GPU platform."},
+  {"id": "n10", "ticker": "AMZN", "text": "Amazon AWS cloud margins expand as cost cuts take hold."},
+  {"id": "n11", "ticker": "AMZN", "text": "Amazon Prime Day sales set a record for online retail."},
+  {"id": "n12", "ticker": "TSLA", "text": "Tesla vehicle deliveries fall as price cuts fail to lift demand."}
+]
