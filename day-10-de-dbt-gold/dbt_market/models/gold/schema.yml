@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: gold_price_metrics
+    description: Daily price metrics per ticker (SMA-3, running high, drawdown).
+    columns:
+      - name: ticker
+        data_tests: [not_null]
+      - name: trade_date
+        data_tests: [not_null]
+      - name: drawdown
+        description: "0 at a new high, negative below it. Never positive."
+  - name: gold_ticker_summary
+    description: One row per ticker with period return, volatility, max drawdown.
+    columns:
+      - name: ticker
+        data_tests: [unique, not_null]
+      - name: trading_days
+        data_tests: [not_null]

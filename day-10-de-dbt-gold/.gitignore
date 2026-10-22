@@ -1,0 +1,7 @@
+*.duckdb
+*.duckdb.wal
+dbt_market/target/
+dbt_market/logs/
+dbt_market/dbt_packages/
+logs/
+.user.yml

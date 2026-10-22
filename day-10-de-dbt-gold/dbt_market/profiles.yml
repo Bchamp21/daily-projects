@@ -1,0 +1,8 @@
+# Local: DuckDB (no cloud needed). Databricks: copy databricks/profiles.example.yml to ~/.dbt/
+dbt_market:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: "{{ env_var('DBT_DUCKDB_PATH', 'market.duckdb') }}"
+      threads: 1

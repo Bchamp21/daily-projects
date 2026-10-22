@@ -1,0 +1,22 @@
+name: dbt_market
+version: "1.0.0"
+config-version: 2
+profile: dbt_market
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+models:
+  dbt_market:
+    staging:
+      +materialized: view
+    gold:
+      +materialized: table
+
+seeds:
+  dbt_market:
+    silver_prices_sample:
+      +column_types:
+        trade_date: date

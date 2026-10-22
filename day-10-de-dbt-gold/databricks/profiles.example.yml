@@ -1,0 +1,12 @@
+# Copy to ~/.dbt/profiles.yml. Token comes from an env var; never commit it.
+dbt_market:
+  target: databricks
+  outputs:
+    databricks:
+      type: databricks
+      catalog: main            # your Unity Catalog catalog
+      schema: market_gold      # where Gold tables land
+      host: "{{ env_var('DATABRICKS_HOST') }}"            # e.g. adb-123.azuredatabricks.net
+      http_path: "{{ env_var('DATABRICKS_HTTP_PATH') }}"  # SQL warehouse > Connection details
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      threads: 4

@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: market_silver
+    description: Silver Delta tables built on Day 7 (Databricks only).
+    schema: market_silver
+    tables:
+      - name: prices
