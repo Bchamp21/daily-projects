@@ -16,5 +16,6 @@ Small end-to-end builds, one per day, rotating:
 | 8 | AI | [`day-08-ai-rag-evals`](./day-08-ai-rag-evals) — RAG eval harness: hit@k, recall@k, MRR, groundedness, CI quality gate |
 | 9 | Python | [`day-09-python-async-fetcher`](./day-09-python-async-fetcher) — asyncio fetcher: semaphore limit, timeouts, retries with backoff |
 | 10 | Data Engineering | [`day-10-de-dbt-gold`](./day-10-de-dbt-gold) — dbt Gold: SMA, drawdown, ticker summary, data tests (DuckDB local, Databricks ready) |
+| 11 | AI | [`day-11-ai-news-extractor`](./day-11-ai-news-extractor) — LLM JSON extraction from headlines with Pydantic validation and retry-on-error |
 
 Each day has code, tests, and a short README with a diagram.
