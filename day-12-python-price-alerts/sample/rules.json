@@ -1,0 +1,9 @@
+{
+  "rules": [
+    {"type": "above", "ticker": "AAPL", "price": 235},
+    {"type": "below", "ticker": "MSFT", "price": 400},
+    {"type": "pct_change", "ticker": "MSFT", "pct": 5},
+    {"type": "sma_cross", "ticker": "AAPL", "window": 3},
+    {"type": "above", "ticker": "NVDA", "price": 150}
+  ]
+}

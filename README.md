@@ -17,5 +17,6 @@ Small end-to-end builds, one per day, rotating:
 | 9 | Python | [`day-09-python-async-fetcher`](./day-09-python-async-fetcher) — asyncio fetcher: semaphore limit, timeouts, retries with backoff |
 | 10 | Data Engineering | [`day-10-de-dbt-gold`](./day-10-de-dbt-gold) — dbt Gold: SMA, drawdown, ticker summary, data tests (DuckDB local, Databricks ready) |
 | 11 | AI | [`day-11-ai-news-extractor`](./day-11-ai-news-extractor) — LLM JSON extraction from headlines with Pydantic validation and retry-on-error |
+| 12 | Python | [`day-12-python-price-alerts`](./day-12-python-price-alerts) — config-driven alert CLI: rule registry, dataclasses, logging, exit codes, parametrized pytest |
 
 Each day has code, tests, and a short README with a diagram.
