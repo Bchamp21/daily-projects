@@ -1,0 +1,36 @@
+# Unity Catalog governance-as-code for the market.prices project
+catalog: market
+owner: data_platform_admins
+schemas:
+  bronze:
+    comment: Raw ingest from on-prem Postgres market.prices
+    grants:
+      data_engineers: [USE SCHEMA, SELECT, MODIFY, CREATE TABLE]
+  silver:
+    comment: Cleaned, deduped daily prices
+    grants:
+      data_engineers: [USE SCHEMA, SELECT, MODIFY, CREATE TABLE]
+      analysts: [USE SCHEMA, SELECT]
+  gold:
+    comment: Business-ready metrics for BI and Genie
+    grants:
+      data_engineers: [USE SCHEMA, SELECT, MODIFY, CREATE TABLE]
+      analysts: [USE SCHEMA, SELECT]
+      bi_readers: [USE SCHEMA, SELECT]
+catalog_grants:
+  data_engineers: [USE CATALOG]
+  analysts: [USE CATALOG]
+  bi_readers: [USE CATALOG]
+tables:
+  gold.gold_ticker_summary:
+    tags: {domain: markets, tier: gold}
+  silver.prices:
+    tags: {domain: markets, tier: silver}
+    column_masks:
+      volume: {function: mask_volume, exempt_group: data_engineers}
+    row_filter:
+      function: ticker_region_filter
+      column: ticker
+      allowed:
+        analysts_us: [AAPL, MSFT]
+        data_engineers: ['*']
