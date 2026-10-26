@@ -1,0 +1,3 @@
+pytest>=8.0.0
+# optional, only for real providers:
+# requests>=2.31

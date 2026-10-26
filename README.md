@@ -19,5 +19,6 @@ Small end-to-end builds, one per day, rotating:
 | 11 | AI | [`day-11-ai-news-extractor`](./day-11-ai-news-extractor) — LLM JSON extraction from headlines with Pydantic validation and retry-on-error |
 | 12 | Python | [`day-12-python-price-alerts`](./day-12-python-price-alerts) — config-driven alert CLI: rule registry, dataclasses, logging, exit codes, parametrized pytest |
 | 13 | Data Engineering | [`day-13-de-unity-catalog`](./day-13-de-unity-catalog) — Unity Catalog governance as code: grants, tags, column mask, row filter, access simulator |
+| 14 | AI | [`day-14-ai-llm-gateway`](./day-14-ai-llm-gateway) — LLM gateway: semantic cache (threshold, TTL, eviction), provider fallback, cost tracking |
 
 Each day has code, tests, and a short README with a diagram.
