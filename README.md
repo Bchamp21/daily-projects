@@ -20,5 +20,6 @@ Small end-to-end builds, one per day, rotating:
 | 12 | Python | [`day-12-python-price-alerts`](./day-12-python-price-alerts) — config-driven alert CLI: rule registry, dataclasses, logging, exit codes, parametrized pytest |
 | 13 | Data Engineering | [`day-13-de-unity-catalog`](./day-13-de-unity-catalog) — Unity Catalog governance as code: grants, tags, column mask, row filter, access simulator |
 | 14 | AI | [`day-14-ai-llm-gateway`](./day-14-ai-llm-gateway) — LLM gateway: semantic cache (threshold, TTL, eviction), provider fallback, cost tracking |
+| 15 | Python | [`day-15-python-portfolio-ledger`](./day-15-python-portfolio-ledger) — FIFO portfolio ledger: Decimal money, SQLite context manager, idempotent import, P&L report CLI |
 
 Each day has code, tests, and a short README with a diagram.
