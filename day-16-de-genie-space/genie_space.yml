@@ -1,0 +1,49 @@
+# Genie space as code. Review in a PR, then copy into the Genie UI (see databricks/STEPS.md).
+title: Market Prices Q&A
+description: Ask plain-English questions about daily stock prices (Gold layer).
+tables:
+  - market.gold.gold_price_metrics
+  - market.gold.gold_ticker_summary
+
+# Genie reads column comments. Good comments = better SQL.
+column_docs:
+  market.gold.gold_price_metrics:
+    ticker: Stock symbol, e.g. AAPL or MSFT.
+    trade_date: Trading day (no weekends).
+    close: Closing price in USD.
+    sma_3: 3-day simple moving average of close.
+    drawdown: Percent below the running high as a decimal. 0 at a new high, never positive.
+  market.gold.gold_ticker_summary:
+    ticker: Stock symbol, one row per ticker.
+    trading_days: Number of trading days in the period.
+    period_return: Last close / first close - 1, as a decimal (0.02 = 2%).
+    max_drawdown: Worst drawdown in the period, as a decimal.
+
+instructions:
+  - Returns and drawdowns are decimals. Show them as percentages rounded to 2 places.
+  - Latest means the row with the max trade_date for that ticker.
+  - Best performer means highest period_return in gold_ticker_summary.
+
+# Trusted example queries: Genie copies these patterns.
+sample_queries:
+  - question: Which ticker had the best return?
+    sql: |
+      SELECT ticker, period_return
+      FROM market.gold.gold_ticker_summary
+      ORDER BY period_return DESC
+      LIMIT 1
+  - question: What is the latest close for each ticker?
+    sql: |
+      SELECT m.ticker, m.trade_date, m.close
+      FROM market.gold.gold_price_metrics m
+      WHERE m.trade_date = (SELECT MAX(trade_date) FROM market.gold.gold_price_metrics x WHERE x.ticker = m.ticker)
+      ORDER BY m.ticker
+
+# Benchmarks: question + the SQL whose result is the right answer.
+benchmarks:
+  - question: Which ticker had the best return?
+    expected_sql: SELECT ticker FROM market.gold.gold_ticker_summary ORDER BY period_return DESC LIMIT 1
+  - question: What was the worst drawdown for AAPL?
+    expected_sql: SELECT max_drawdown FROM market.gold.gold_ticker_summary WHERE ticker = 'AAPL'
+  - question: How many trading days does each ticker have?
+    expected_sql: SELECT ticker, trading_days FROM market.gold.gold_ticker_summary

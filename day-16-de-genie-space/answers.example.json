@@ -1,0 +1,5 @@
+{
+  "Which ticker had the best return?": "SELECT ticker FROM market.gold.gold_ticker_summary WHERE period_return = (SELECT MAX(period_return) FROM market.gold.gold_ticker_summary)",
+  "What was the worst drawdown for AAPL?": "SELECT MIN(drawdown) FROM market.gold.gold_price_metrics WHERE ticker = 'AAPL'",
+  "How many trading days does each ticker have?": "SELECT ticker, COUNT(*) FROM market.gold.gold_price_metrics GROUP BY ticker"
+}
