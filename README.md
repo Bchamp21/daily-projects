@@ -22,5 +22,6 @@ Small end-to-end builds, one per day, rotating:
 | 14 | AI | [`day-14-ai-llm-gateway`](./day-14-ai-llm-gateway) — LLM gateway: semantic cache (threshold, TTL, eviction), provider fallback, cost tracking |
 | 15 | Python | [`day-15-python-portfolio-ledger`](./day-15-python-portfolio-ledger) — FIFO portfolio ledger: Decimal money, SQLite context manager, idempotent import, P&L report CLI |
 | 16 | Data Engineering | [`day-16-de-genie-space`](./day-16-de-genie-space) — Genie space as code: validated YAML, column comments, result-set benchmark scoring |
+| 17 | AI | [`day-17-ai-text-to-sql`](./day-17-ai-text-to-sql) — guarded text-to-SQL agent: SELECT-only guard, table allowlist, auto LIMIT, self-correction from SQL errors |
 
 Each day has code, tests, and a short README with a diagram.
