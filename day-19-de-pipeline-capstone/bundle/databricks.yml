@@ -1,0 +1,50 @@
+bundle:
+  name: stock-pipeline
+
+variables:
+  alert_email:
+    description: Who gets failure emails
+
+targets:
+  dev:
+    mode: development
+    default: true
+
+resources:
+  jobs:
+    stock_pipeline:
+      name: stock_pipeline
+      schedule:
+        quartz_cron_expression: "0 30 18 ? * MON-FRI"
+        timezone_id: America/Denver
+      email_notifications:
+        on_failure: ["${var.alert_email}"]
+      tasks:
+        - task_key: load_source
+          max_retries: 0
+          notebook_task:
+            notebook_path: ../notebooks/00_load_source
+        - task_key: ingest_bronze
+          depends_on:
+            - task_key: load_source
+          max_retries: 2
+          notebook_task:
+            notebook_path: ../notebooks/01_ingest_bronze
+        - task_key: build_silver
+          depends_on:
+            - task_key: ingest_bronze
+          max_retries: 1
+          notebook_task:
+            notebook_path: ../notebooks/02_build_silver
+        - task_key: build_gold
+          depends_on:
+            - task_key: build_silver
+          max_retries: 1
+          notebook_task:
+            notebook_path: ../notebooks/03_dbt_gold
+        - task_key: quality_gate
+          depends_on:
+            - task_key: build_gold
+          max_retries: 0
+          notebook_task:
+            notebook_path: ../notebooks/04_quality_gate
