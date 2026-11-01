@@ -25,5 +25,6 @@ Small end-to-end builds, one per day, rotating:
 | 17 | AI | [`day-17-ai-text-to-sql`](./day-17-ai-text-to-sql) — guarded text-to-SQL agent: SELECT-only guard, table allowlist, auto LIMIT, self-correction from SQL errors |
 | 18 | Python | [`day-18-python-incremental-loader`](./day-18-python-incremental-loader) — incremental CSV loader: generators, @retry/@timed decorators, batching, upsert, atomic watermark |
 | 19 | Data Engineering | [`day-19-de-pipeline-capstone`](./day-19-de-pipeline-capstone) — capstone: one task list runs Source→Bronze→Silver→Gold→quality gate locally and generates the Databricks Asset Bundle job |
+| 20 | AI | [`day-20-ai-hybrid-search`](./day-20-ai-hybrid-search) — hybrid retrieval: BM25 + vector search fused with RRF, MMR de-duplication, pluggable Ollama embeddings |
 
 Each day has code, tests, and a short README with a diagram.
