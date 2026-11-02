@@ -26,5 +26,6 @@ Small end-to-end builds, one per day, rotating:
 | 18 | Python | [`day-18-python-incremental-loader`](./day-18-python-incremental-loader) — incremental CSV loader: generators, @retry/@timed decorators, batching, upsert, atomic watermark |
 | 19 | Data Engineering | [`day-19-de-pipeline-capstone`](./day-19-de-pipeline-capstone) — capstone: one task list runs Source→Bronze→Silver→Gold→quality gate locally and generates the Databricks Asset Bundle job |
 | 20 | AI | [`day-20-ai-hybrid-search`](./day-20-ai-hybrid-search) — hybrid retrieval: BM25 + vector search fused with RRF, MMR de-duplication, pluggable Ollama embeddings |
+| 21 | Python | [`day-21-python-schema-drift`](./day-21-python-schema-drift) — schema drift detector: type inference, data-contract diff, warn vs break severity, pipeline exit codes |
 
 Each day has code, tests, and a short README with a diagram.

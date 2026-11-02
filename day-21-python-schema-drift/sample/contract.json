@@ -1,0 +1,9 @@
+{
+  "table": "market.prices",
+  "columns": {
+    "ticker": {"type": "string", "nullable": false},
+    "trade_date": {"type": "date", "nullable": false},
+    "close": {"type": "float", "nullable": false},
+    "volume": {"type": "int", "nullable": true}
+  }
+}
