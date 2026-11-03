@@ -1,0 +1,5 @@
+[
+  {"ticker": "AAPL", "company_name": "Apple Inc.", "sector": "Technology", "exchange": "NASDAQ"},
+  {"ticker": "META", "company_name": "Facebook Inc.", "sector": "Technology", "exchange": "NASDAQ"},
+  {"ticker": "JHG", "company_name": "Janus Henderson Group", "sector": "Financials", "exchange": "NYSE"}
+]
