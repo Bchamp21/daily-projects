@@ -28,5 +28,6 @@ Small end-to-end builds, one per day, rotating:
 | 20 | AI | [`day-20-ai-hybrid-search`](./day-20-ai-hybrid-search) — hybrid retrieval: BM25 + vector search fused with RRF, MMR de-duplication, pluggable Ollama embeddings |
 | 21 | Python | [`day-21-python-schema-drift`](./day-21-python-schema-drift) — schema drift detector: type inference, data-contract diff, warn vs break severity, pipeline exit codes |
 | 22 | Data Engineering | [`day-22-de-scd2-ticker-dim`](./day-22-de-scd2-ticker-dim) — SCD Type 2 ticker dimension: hash change detection, close/open versions, one-statement Delta MERGE, point-in-time join, dbt snapshot |
+| 23 | AI | [`day-23-ai-prompt-injection-guard`](./day-23-ai-prompt-injection-guard) — Prompt-injection guard for RAG: unicode-normalized detector, quarantine, spotlighting, tool allowlist, canary-leak check |
 
 Each day has code, tests, and a short README with a diagram.

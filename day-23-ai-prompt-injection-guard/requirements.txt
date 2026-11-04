@@ -1,0 +1,3 @@
+pytest>=8.0.0
+# optional, only for a real model:
+# requests>=2.31
