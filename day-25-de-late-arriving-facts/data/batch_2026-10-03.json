@@ -1,0 +1,4 @@
+[
+  {"ticker": "AAPL", "trade_date": "2026-10-03", "close": "178.50", "published_at": "2026-10-03T21:00:00"},
+  {"ticker": "MSFT", "trade_date": "2026-10-03", "close": "420.00", "published_at": "2026-10-03T21:00:00"}
+]

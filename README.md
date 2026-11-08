@@ -30,5 +30,6 @@ Small end-to-end builds, one per day, rotating:
 | 22 | Data Engineering | [`day-22-de-scd2-ticker-dim`](./day-22-de-scd2-ticker-dim) — SCD Type 2 ticker dimension: hash change detection, close/open versions, one-statement Delta MERGE, point-in-time join, dbt snapshot |
 | 23 | AI | [`day-23-ai-prompt-injection-guard`](./day-23-ai-prompt-injection-guard) — Prompt-injection guard for RAG: unicode-normalized detector, quarantine, spotlighting, tool allowlist, canary-leak check |
 | 24 | Python | [`day-24-python-circuit-breaker`](./day-24-python-circuit-breaker) — resilient API calls: circuit breaker (closed/open/half-open), retry only transient errors, full-jitter backoff, injectable clock
+| 25 | Data Engineering | [`day-25-de-late-arriving-facts`](./day-25-de-late-arriving-facts) — late price corrections: watermark + lateness window, Silver MERGE, quarantine, Gold recompute from the dirty date
 
 Each day has code, tests, and a short README with a diagram.
