@@ -32,5 +32,6 @@ Small end-to-end builds, one per day, rotating:
 | 24 | Python | [`day-24-python-circuit-breaker`](./day-24-python-circuit-breaker) — resilient API calls: circuit breaker (closed/open/half-open), retry only transient errors, full-jitter backoff, injectable clock
 | 25 | Data Engineering | [`day-25-de-late-arriving-facts`](./day-25-de-late-arriving-facts) — late price corrections: watermark + lateness window, Silver MERGE, quarantine, Gold recompute from the dirty date
 | 26 | AI | [`day-26-ai-citation-checker`](./day-26-ai-citation-checker) — citation checker for RAG answers: per-sentence number check, overlap score, wrong-citation repair, gray-zone LLM judge, PASS/FIX/BLOCK gate |
+| 27 | Python | [`day-27-python-rate-limit-cache`](./day-27-python-rate-limit-cache) — token-bucket rate limiter + TTL/LRU cache decorator: burst control, retry_after, cache hits skip the limiter, injectable clock |
 
 Each day has code, tests, and a short README with a diagram.
