@@ -34,4 +34,5 @@ Small end-to-end builds, one per day, rotating:
 | 26 | AI | [`day-26-ai-citation-checker`](./day-26-ai-citation-checker) — citation checker for RAG answers: per-sentence number check, overlap score, wrong-citation repair, gray-zone LLM judge, PASS/FIX/BLOCK gate |
 | 27 | Python | [`day-27-python-rate-limit-cache`](./day-27-python-rate-limit-cache) — token-bucket rate limiter + TTL/LRU cache decorator: burst control, retry_after, cache hits skip the limiter, injectable clock |
 
+| 28 | Data Engineering | [`day-28-de-cdf-incremental-gold`](./day-28-de-cdf-incremental-gold) — Delta Change Data Feed → incremental Gold: insert/pre/post/delete deltas, version checkpoint, idempotent rerun, MERGE, proof vs full recompute |
 Each day has code, tests, and a short README with a diagram.
