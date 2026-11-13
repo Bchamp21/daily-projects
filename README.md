@@ -35,5 +35,6 @@ Small end-to-end builds, one per day, rotating:
 | 27 | Python | [`day-27-python-rate-limit-cache`](./day-27-python-rate-limit-cache) — token-bucket rate limiter + TTL/LRU cache decorator: burst control, retry_after, cache hits skip the limiter, injectable clock |
 | 28 | Data Engineering | [`day-28-de-cdf-incremental-gold`](./day-28-de-cdf-incremental-gold) — Delta Change Data Feed → incremental Gold: insert/pre/post/delete deltas, version checkpoint, idempotent rerun, MERGE, proof vs full recompute |
 | 29 | AI | [`day-29-ai-semantic-cache`](./day-29-ai-semantic-cache) — semantic cache for LLM calls: exact + embedding lookup, ticker/date entity guard, TTL, LFU eviction, invalidate-by-ticker, hit-rate stats |
+| 30 | Python | [`day-30-python-sqlite-job-queue`](./day-30-python-sqlite-job-queue) — durable SQLite job queue: lease + visibility timeout, crash recovery, lease tokens, exponential backoff, dead-letter, idempotent enqueue |
 
 Each day has code, tests, and a short README with a diagram.
