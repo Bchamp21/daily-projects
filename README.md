@@ -37,4 +37,5 @@ Small end-to-end builds, one per day, rotating:
 | 29 | AI | [`day-29-ai-semantic-cache`](./day-29-ai-semantic-cache) — semantic cache for LLM calls: exact + embedding lookup, ticker/date entity guard, TTL, LFU eviction, invalidate-by-ticker, hit-rate stats |
 | 30 | Python | [`day-30-python-sqlite-job-queue`](./day-30-python-sqlite-job-queue) — durable SQLite job queue: lease + visibility timeout, crash recovery, lease tokens, exponential backoff, dead-letter, idempotent enqueue |
 
+| 31 | Data Engineering | [`day-31-de-delta-maintenance`](./day-31-de-delta-maintenance) — Delta table maintenance: small-file health check, per-partition bin-packing OPTIMIZE, safe VACUUM guard (7-day + longest-reader), liquid clustering, predictive optimization |
 Each day has code, tests, and a short README with a diagram.
