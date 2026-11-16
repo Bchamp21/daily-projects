@@ -38,5 +38,6 @@ Small end-to-end builds, one per day, rotating:
 | 30 | Python | [`day-30-python-sqlite-job-queue`](./day-30-python-sqlite-job-queue) — durable SQLite job queue: lease + visibility timeout, crash recovery, lease tokens, exponential backoff, dead-letter, idempotent enqueue |
 | 31 | Data Engineering | [`day-31-de-delta-maintenance`](./day-31-de-delta-maintenance) — Delta table maintenance: small-file health check, per-partition bin-packing OPTIMIZE, safe VACUUM guard (7-day + longest-reader), liquid clustering, predictive optimization |
 | 32 | AI | [`day-32-ai-context-packer`](./day-32-ai-context-packer) — context-window packer: token budget with answer reserve, priority order, recent turns kept whole, RAG chunk dedupe + cap, old turns summarized into one memory line |
+| 33 | Python | [`day-33-python-mini-dag-runner`](./day-33-python-mini-dag-runner) — mini DAG runner: Kahn waves run in parallel, cycle path detection, retries with backoff, skip-downstream on failure, results passed to children, resume from state.json |
 
 Each day has code, tests, and a short README with a diagram.
