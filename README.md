@@ -40,5 +40,6 @@ Small end-to-end builds, one per day, rotating:
 | 32 | AI | [`day-32-ai-context-packer`](./day-32-ai-context-packer) — context-window packer: token budget with answer reserve, priority order, recent turns kept whole, RAG chunk dedupe + cap, old turns summarized into one memory line |
 | 33 | Python | [`day-33-python-mini-dag-runner`](./day-33-python-mini-dag-runner) — mini DAG runner: Kahn waves run in parallel, cycle path detection, retries with backoff, skip-downstream on failure, results passed to children, resume from state.json |
 | 34 | Data Engineering | [`day-34-de-expectations-quarantine`](./day-34-de-expectations-quarantine) — Lakeflow data quality expectations: warn/drop/fail per rule, quarantine table with reasons, NULL-safe checks, batch pass-rate gate, event-log metrics |
+| 35 | AI | [`day-35-ai-pii-redactor`](./day-35-ai-pii-redactor) — PII redaction gateway for LLM calls: email/SSN/card(Luhn)/phone/account detectors, reversible placeholder vault, allow-list, leak guard before the call, restore after |
 
 Each day has code, tests, and a short README with a diagram.
