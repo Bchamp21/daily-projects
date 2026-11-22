@@ -42,5 +42,6 @@ Small end-to-end builds, one per day, rotating:
 | 34 | Data Engineering | [`day-34-de-expectations-quarantine`](./day-34-de-expectations-quarantine) — Lakeflow data quality expectations: warn/drop/fail per rule, quarantine table with reasons, NULL-safe checks, batch pass-rate gate, event-log metrics |
 | 35 | AI | [`day-35-ai-pii-redactor`](./day-35-ai-pii-redactor) — PII redaction gateway for LLM calls: email/SSN/card(Luhn)/phone/account detectors, reversible placeholder vault, allow-list, leak guard before the call, restore after |
 | 36 | Python | [`day-36-python-kpi-report`](./day-36-python-kpi-report) — monthly KPI report CLI: bad-row rejection with reasons, revenue by month, MoM % with safe divide, running total, top ticker, Markdown output, exit code on bad data |
+| 37 | Data Engineering | [`day-37-de-source-target-recon`](./day-37-de-source-target-recon) — source-to-target reconciliation: normalized row hash, counts + sums with tolerance, missing/extra/duplicate keys, freshness lag, recon_log, reload only the bad dates |
 
 Each day has code, tests, and a short README with a diagram.
