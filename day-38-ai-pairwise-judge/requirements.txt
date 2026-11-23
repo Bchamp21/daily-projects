@@ -1,0 +1,3 @@
+pytest>=7
+# optional, for a real local judge: requests (with Ollama running)
+
