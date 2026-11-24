@@ -44,5 +44,6 @@ Small end-to-end builds, one per day, rotating:
 | 36 | Python | [`day-36-python-kpi-report`](./day-36-python-kpi-report) — monthly KPI report CLI: bad-row rejection with reasons, revenue by month, MoM % with safe divide, running total, top ticker, Markdown output, exit code on bad data |
 | 37 | Data Engineering | [`day-37-de-source-target-recon`](./day-37-de-source-target-recon) — source-to-target reconciliation: normalized row hash, counts + sums with tolerance, missing/extra/duplicate keys, freshness lag, recon_log, reload only the bad dates |
 | 38 | AI | [`day-38-ai-pairwise-judge`](./day-38-ai-pairwise-judge) — pairwise LLM-as-judge: swap-order position-bias check, inconsistent = tie, ties count half, Wilson 95% CI, SHIP_NEW/KEEP_OLD/NEED_MORE_DATA/JUDGE_UNRELIABLE gate |
+| 39 | Python | [`day-39-python-webhook-receiver`](./day-39-python-webhook-receiver) — secure, idempotent webhook receiver: HMAC-SHA256 signature (constant-time), 5-min replay window, dedupe by event id in SQLite, handler in same transaction (500 = retry, rollback), key rotation |
 
 Each day has code, tests, and a short README with a diagram.
