@@ -1,0 +1,17 @@
+# Copy to the repo root .github/workflows/ to run on every PR
+name: bundle-check
+on: [pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -r day-40-de-asset-bundle/requirements.txt
+      - run: cd day-40-de-asset-bundle && PYTHONPATH=src python -m bundlecheck .
+      - uses: databricks/setup-cli@main
+      - run: cd day-40-de-asset-bundle && databricks bundle validate -t dev
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}

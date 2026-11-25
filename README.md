@@ -45,5 +45,6 @@ Small end-to-end builds, one per day, rotating:
 | 37 | Data Engineering | [`day-37-de-source-target-recon`](./day-37-de-source-target-recon) — source-to-target reconciliation: normalized row hash, counts + sums with tolerance, missing/extra/duplicate keys, freshness lag, recon_log, reload only the bad dates |
 | 38 | AI | [`day-38-ai-pairwise-judge`](./day-38-ai-pairwise-judge) — pairwise LLM-as-judge: swap-order position-bias check, inconsistent = tie, ties count half, Wilson 95% CI, SHIP_NEW/KEEP_OLD/NEED_MORE_DATA/JUDGE_UNRELIABLE gate |
 | 39 | Python | [`day-39-python-webhook-receiver`](./day-39-python-webhook-receiver) — secure, idempotent webhook receiver: HMAC-SHA256 signature (constant-time), 5-min replay window, dedupe by event id in SQLite, handler in same transaction (500 = retry, rollback), key rotation |
+| 40 | Data Engineering | [`day-40-de-asset-bundle`](./day-40-de-asset-bundle) — the stock pipeline as a Databricks Asset Bundle: dev/prod targets, 4-task job with retries/timeouts/alerts, pure-Python bundle linter (DAG order, cycles, prod run_as, undeclared vars, secrets), CI workflow |
 
 Each day has code, tests, and a short README with a diagram.

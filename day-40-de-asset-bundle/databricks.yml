@@ -1,0 +1,27 @@
+# Databricks Asset Bundle: the stock pipeline as code (deploy with: databricks bundle deploy -t dev)
+bundle:
+  name: stock-pipeline
+
+variables:
+  catalog:
+    description: Unity Catalog catalog for this target
+    default: market_dev
+  alert_email:
+    description: Who gets failure emails
+    default: you@example.com
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true
+    variables:
+      catalog: market_dev
+  prod:
+    mode: production
+    variables:
+      catalog: market_prod
+    run_as:
+      service_principal_name: ${var.prod_sp_app_id}
