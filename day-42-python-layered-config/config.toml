@@ -1,0 +1,9 @@
+# Non-secret settings only. Secrets come from env vars (APP_DB_PASSWORD, APP_API_KEY).
+env = "dev"
+batch_size = 1000
+
+[db]
+host = "localhost"
+port = 5432
+name = "market"
+

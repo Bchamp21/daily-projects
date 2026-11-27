@@ -47,5 +47,6 @@ Small end-to-end builds, one per day, rotating:
 | 39 | Python | [`day-39-python-webhook-receiver`](./day-39-python-webhook-receiver) — secure, idempotent webhook receiver: HMAC-SHA256 signature (constant-time), 5-min replay window, dedupe by event id in SQLite, handler in same transaction (500 = retry, rollback), key rotation |
 | 40 | Data Engineering | [`day-40-de-asset-bundle`](./day-40-de-asset-bundle) — the stock pipeline as a Databricks Asset Bundle: dev/prod targets, 4-task job with retries/timeouts/alerts, pure-Python bundle linter (DAG order, cycles, prod run_as, undeclared vars, secrets), CI workflow |
 | 41 | AI | [`day-41-ai-chunking-benchmark`](./day-41-ai-chunking-benchmark) — chunking strategy benchmark for RAG: fixed+overlap vs sentence packing vs recursive splitter, TF-IDF or Ollama embeddings, hit@k / MRR / context-chars cost, pick-best gate |
+| 42 | Python | [`day-42-python-layered-config`](./day-42-python-layered-config) — layered, typed config loader: defaults < TOML < env < CLI, type coercion, choices/range checks, all errors at once, secrets banned from files and masked, source of each value |
 
 Each day has code, tests, and a short README with a diagram.
