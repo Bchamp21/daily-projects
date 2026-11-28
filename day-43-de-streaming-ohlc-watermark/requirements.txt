@@ -1,0 +1,2 @@
+pytest>=7
+# Databricks job only: pyspark (provided by the runtime)

@@ -48,5 +48,6 @@ Small end-to-end builds, one per day, rotating:
 | 40 | Data Engineering | [`day-40-de-asset-bundle`](./day-40-de-asset-bundle) — the stock pipeline as a Databricks Asset Bundle: dev/prod targets, 4-task job with retries/timeouts/alerts, pure-Python bundle linter (DAG order, cycles, prod run_as, undeclared vars, secrets), CI workflow |
 | 41 | AI | [`day-41-ai-chunking-benchmark`](./day-41-ai-chunking-benchmark) — chunking strategy benchmark for RAG: fixed+overlap vs sentence packing vs recursive splitter, TF-IDF or Ollama embeddings, hit@k / MRR / context-chars cost, pick-best gate |
 | 42 | Python | [`day-42-python-layered-config`](./day-42-python-layered-config) — layered, typed config loader: defaults < TOML < env < CLI, type coercion, choices/range checks, all errors at once, secrets banned from files and masked, source of each value |
+| 43 | DE | [`day-43-de-streaming-ohlc-watermark`](./day-43-de-streaming-ohlc-watermark) — streaming 1-minute OHLC bars + VWAP with a 30s watermark: late/duplicate/out-of-order ticks, append mode emits each bar once, bounded state; PySpark Structured Streaming job for Databricks |
 
 Each day has code, tests, and a short README with a diagram.
